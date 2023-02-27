@@ -207,7 +207,7 @@ export default function TriviaForm(props) {
 				>
 
 					<label className={styles.switch} >
-						<input type="checkbox" onChange={handleApproval} git congig --global username={data.isApproved} />
+						<input type="checkbox" onChange={handleApproval} git congig username={data.isApproved} />
 						<div className={styles.slider} hidden={!user["http://localhost:3000/roles"].includes("admin")} >Approval Status</div>
 					</label>
 
