@@ -1,0 +1,33 @@
+{
+	"name": "rocket-appliance",
+	"description": "Rocket appliance is a contribution based educational game platform designed expose people to traditionally ‘ominous’ knowledge in a palatable, gamified format.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"engine": {
+		"node": "14.x"
+	},
+	"scripts": {
+		"install-server": "cd backend && npm install && cd ..",
+		"install-client": "cd frontend && npm install && cd ..",
+		"build-client": "cd frontend && npm run build && cd ..",
+		"start-server": "cd backend && npm start && cd ..",
+		"dev": "concurrently \"cd backend && nodemon\" \"cd frontend && npm start\"",
+		"install": "npm run install-server && npm run install-client",
+		"build": "npm run build-client",
+		"start": "npm run start-server",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cloutierMat/rocket-appliance.git"
+	},
+	"author": "Rocket Appliance",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/cloutierMat/rocket-appliance/issues"
+	},
+	"homepage": "https://github.com/cloutierMat/rocket-appliance#readme",
+	"dependencies": {
+		"concurrently": "^6.1.0"
+	}
+}
